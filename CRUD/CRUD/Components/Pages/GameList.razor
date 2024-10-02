@@ -1,0 +1,42 @@
+﻿@page "/games"
+@using CRUD.SharedOne.Models
+@using CRUD.SharedOne.Services
+@* @inject NavigationManager navimanager *@
+@inject IGameService _gameService
+@attribute [StreamRendering(true)]
+@rendermode RenderMode.InteractiveServer
+
+<h3>GameList</h3>
+
+@if(games == null)
+{
+    <span> Loading..</span>
+}
+else if(games.Count == 0)
+{
+    <span>no games found</span>
+}
+else
+{
+    <ul>
+        @foreach(var game in games)
+        {
+            <li>@game.Name <EditGameButton Id="game.Id"/></li>
+        }
+    </ul>
+}
+
+<CreateGameButton />
+
+@code {
+
+
+    public List<Game>? games = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(1000);
+        games = await _gameService.GetAllGames();
+    }
+    
+}

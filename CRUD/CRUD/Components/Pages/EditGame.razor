@@ -1,0 +1,55 @@
+﻿@page "/edit-game"
+@page "/edit-game/{id:int}"
+@using CRUD.SharedOne.Models
+@using CRUD.SharedOne.Services
+@inject IGameService gameService
+@rendermode InteractiveAuto
+
+@if (Id == null)
+{
+    <h3>Create Game</h3>
+}
+else
+{
+    <h3>Edit Game @game.Name</h3>
+}
+
+
+<EditForm Model="game" onsubmit="HandleSubmit" FormName="editgame">
+    <label> Name</label>
+    <InputText @bind-Value="game.Name"> @game.Name</InputText>
+    <button type="submit" class="btn btn-primary"> submit</button>
+    @if (Id != null)
+    {
+        <button @onclick="DeleteGame" type="button" class="btn btn-danger">Danger</button>
+    }
+</EditForm>
+
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    [SupplyParameterFromForm]
+    Game game { get; set; } = new Game { Name = string.Empty };
+
+  
+ 
+    protected override async Task OnParametersSetAsync() => game = await GameService.GetGameById((int)Id);
+    async Task HandleSubmit()
+    {
+        if (Id == null)
+        {
+            await GameService.AddGame(game);
+        }
+        else
+        {
+            await GameService.EditGame((int)Id,game);
+        }
+
+    }
+    async Task DeleteGame()
+    {
+        await GameService.DeleteGame((int)Id);
+    }
+}

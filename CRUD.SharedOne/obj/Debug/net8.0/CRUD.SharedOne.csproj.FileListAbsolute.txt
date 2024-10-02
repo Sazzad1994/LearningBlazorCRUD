@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\bin\Debug\net8.0\CRUD.SharedOne.deps.json
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\bin\Debug\net8.0\CRUD.SharedOne.dll
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\bin\Debug\net8.0\CRUD.SharedOne.pdb
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\CRUD.SharedOne.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\CRUD.SharedOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\CRUD.SharedOne.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\CRUD.SharedOne.AssemblyInfo.cs
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\CRUD.SharedOne.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\CRUD.SharedOne.dll
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\refint\CRUD.SharedOne.dll
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\CRUD.SharedOne.pdb
+C:\Users\User\source\repos\LearningBlazor.CRUD\CRUD.SharedOne\obj\Debug\net8.0\ref\CRUD.SharedOne.dll
